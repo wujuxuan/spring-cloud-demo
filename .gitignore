@@ -1,0 +1,7 @@
+# Project exclude paths
+/config-server/target/
+/eureka-client-01/target/
+/eureka-server-01/target/
+/gatewey/target/
+/pms/target/
+/ums/target/

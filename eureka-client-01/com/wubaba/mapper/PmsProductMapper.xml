@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wubaba.mapper.PmsProductMapper">
+    <sql id="tableName">
+        pms_product
+    </sql>
+
+    <sql id="baseColumn">
+        id,title,subtitle,sort_id,brand_id,freight_id,store_id,taxation,label_one,label_two,label_three,product_tab_id,pic,banner,video,details,price,stock,sales,product_type,pre_sale_amount,pre_sale_time,status,delete_status,edit_time,edit_id,rejection_reason,examine_time,examine_id,sale_time,under_time,create_time,update_time,sku_name_json
+    </sql>
+
+</mapper>

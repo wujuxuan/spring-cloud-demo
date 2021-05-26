@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "PMS:ribbon.NFLoadBalancerRuleClassName",
+      "type": "java.lang.String",
+      "description": "Description for PMS:ribbon.NFLoadBalancerRuleClassName."
+  }
+] }

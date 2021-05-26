@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wubaba.mapper.PmsSortMapper">
+    <sql id="tableName">
+        pms_sort
+    </sql>
+
+    <sql id="baseColumn">
+        id,name,app_pic,applets_pic,parent_id,level,sort,is_show,edit_time,edit_id,status,rejection_reason,examine_time,examine_id,store_id,create_time,update_time
+    </sql>
+
+</mapper>

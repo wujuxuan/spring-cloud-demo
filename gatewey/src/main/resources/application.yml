@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    consul:
+      host: 192.168.0.189
+      port: 8500
+      discovery:
+        register-health-check: false
+        
+    gateway:
+      routes:
+        - id: user_route							# 指定路由唯一标识
+          uri: lb://PMS # 指定路由服务的地址
+          predicates:
+            - Path=/product/**					  # 指定路由规则
+
+        - id: product_route
+          uri: lb://UMS    #lb: 代表负载均衡转发路由
+          predicates:
+              - Path=/user/**
+    discovery:
+        locator:
+          enabled: true #开启根据服务名动态转发路由
+          
+server:
+  port: 8989
