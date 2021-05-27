@@ -1,0 +1,20 @@
+server:
+  port: 8787
+spring:
+  profiles:
+    active: prod # 指定读取文件的具体环境 
+  application:
+    name: config   # 指定读取文件的前缀
+  cloud:
+    nacos:
+      config:
+        file-extension: properties #指定读取文件后缀
+        group: DEFAULT_GROUP #读取配置的分组
+      server-addr: 127.169.0.189:8848  #远程配置中心的
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr} #指定注册中心地址  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *  #暴露所有web端点

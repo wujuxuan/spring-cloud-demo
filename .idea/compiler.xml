@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
+        <module name="alibaba" />
         <module name="eureka-server-01" />
         <module name="eureka-client-01" />
         <module name="config-client" />
@@ -15,9 +16,11 @@
         <module name="pms" />
         <module name="ums" />
         <module name="gatewey" />
+        <module name="nacos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="alibaba" target="1.8" />
       <module name="eureka-erver-01" target="8" />
       <module name="open-feign" target="1.8" />
       <module name="test" target="1.8" />
@@ -25,12 +28,14 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="alibaba" options="-parameters" />
       <module name="config-client" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="consul" options="-parameters" />
       <module name="eureka-client-01" options="-parameters" />
       <module name="eureka-server-01" options="-parameters" />
       <module name="gatewey" options="-parameters" />
+      <module name="nacos" options="-parameters" />
       <module name="open-feign" options="-parameters" />
       <module name="pms" options="-parameters" />
       <module name="test" options="-parameters" />
